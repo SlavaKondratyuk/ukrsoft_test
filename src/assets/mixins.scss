@@ -1,0 +1,11 @@
+@mixin big-text {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 64px;
+}
+
+@mixin small-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}

@@ -1,0 +1,69 @@
+@use '../../../assets/mixins.scss' as mixins;
+
+.result {
+    width: 595px;
+    background: #56C6AD;
+    border-radius: 0px 10px 10px 0px;
+    padding: 40px 50px 22px 50px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+    h5 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    &_big-text {
+        @include mixins.big-text;
+    }
+
+    &_small-text {
+        @include mixins.small-text;
+    }
+
+    &_profit-info {
+        margin-top: 6px;
+    }
+
+    &_percent-spacing {
+        margin-top: 36px;
+    }
+
+    &_review {
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 49px;
+        }
+
+        &-btn {
+            width: 321px;
+            background: #56C6AD;
+            margin-bottom: 20px;
+            padding: 13px 54px;
+            border: 2px solid #FFFFFF;
+            border-radius: 7px;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &_profit-description {
+        margin-top: 33px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+    }
+    
+}
