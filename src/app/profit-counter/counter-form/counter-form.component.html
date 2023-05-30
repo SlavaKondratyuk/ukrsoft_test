@@ -1,1 +1,18 @@
-<p>counter-form works!</p>
+<div>
+    <form [formGroup]="profitForm">
+        <div>
+          <input type="number" formControlName="money">
+          <button (click)="decreaseValue()" [disabled]="isMinValue()">-</button>
+          <button (click)="increaseValue()" [disabled]="isMaxValue()">+</button>
+        </div>
+
+        <div>
+            <mat-form-field>
+              <mat-label>Options</mat-label>
+              <mat-select formControlName="currency" [compareWith]="compareOptions">
+                <mat-option *ngFor="let option of options" [value]="option">{{ option }}</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+      </form>
+</div>
